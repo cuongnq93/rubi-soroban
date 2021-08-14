@@ -1,0 +1,58 @@
+body, html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.2;
+}
+.el-footer {
+    text-align: center;
+}
+
+.activity-container {
+    position: relative;
+    .result {
+        position: absolute;
+        font-size: 14rem;
+        top: 0;
+        right: 0;
+        color: #0000000d;
+    }
+}
+.activity {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+    &--item {
+        color: #fff;
+        background-color: #d488d2;
+        border-color: #d488d2;
+        display: block;
+        padding: 10px;
+        margin-bottom: 5px;
+        position: relative;
+        &:nth-child(even) {
+            background-color: #909399;
+            border-color: #909399;
+        }
+        .expand {
+            position: absolute;
+            display: block;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+            line-height: 30px;
+            right: -4px;
+            bottom: 10px;
+            opacity: .5;
+        }
+    }
+    &--circle {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50%;
+    }
+}
